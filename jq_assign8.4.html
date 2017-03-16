@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<!--The script below will update both the anchor tag the href elements in the DOM when executed-->
+        <script>
+            $(document).ready(function(){
+            $("#btn1").click(function(){
+            $("a[href='https://acadgild.com/']").attr('href', 'http://www.google.com/');
+            $("a").text("google");
+
+                 });
+                 });
+        </script>
+
+    <title>Change hyperlink text</title>
+</head>
+<!--the a href html will be updated with the script above-->
+<body>
+        <button id = "btn1">Change me!</button>
+        <a href="https://acadgild.com/">AcadGild</a>
+</body>
+</html>
